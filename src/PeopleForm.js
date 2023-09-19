@@ -6,11 +6,11 @@ const PeopleForm = ({ kisiler, submitFn }) => {
 
   useEffect(() => {
     if (kisiler.includes(isim)) {
-      setError("Bu isim daha önce eklenmiş")
+      setError("Bu isim daha önce eklenmiş");
     } else {
-      setError(null)
+      setError(null);
     }
-  }, [isim, kisiler])
+  }, [isim, kisiler]);
 
   function handleIsimChange(e) {
     setIsim(e.target.value);
